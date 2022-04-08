@@ -50,5 +50,31 @@ color: inherit;
 .active {
     border-bottom: 1px solid #242424;
 }
+/*hero-image*/
 
+#hero-outer {   
+    min-height: 600px;
+    width: 100%;
+    overflow: hidden;    
+}
 
+#hero-image {
+    min-height: 600px;
+    width: 100%;
+    background: url("../images/hero-image.jpg") no-repeat center center;
+    background-size: 100%;
+
+/*animates zoom effect on loading page*/
+animation-name: hero-zoom;
+animation-duration: 5s;
+animation-fill-mode: backwards;
+}
+/*creats the level of zoom for hero image*/
+@keyframes hero-zoom {
+    from{
+        transform: scale(1.1);
+    }
+    to{
+        transform: scale(1);
+    }
+}

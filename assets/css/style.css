@@ -8,7 +8,8 @@
 body {
     font-family: Roboto Condensed, sans-serif;
     font-weight: 400;
-    color: #FFA500;
+    color: #383838;
+    background: #EBEBEB;
 }
 /*heading and logo*/
 
@@ -50,16 +51,19 @@ color: inherit;
 .active {
     border-bottom: 1px solid #242424;
 }
-/*hero-image*/
+/*hero-image and cover text*/
 
 #hero-outer {   
-    min-height: 600px;
+    height: 600px;
     width: 100%;
-    overflow: hidden;    
+    overflow: hidden; 
+    position: relative;   
 }
-
+#cover-text, #cover-text h2{
+    color: #383838;
+}
 #hero-image {
-    min-height: 600px;
+    height: 600px;
     width: 100%;
     background: url("../images/hero-image.jpg") no-repeat center center;
     background-size: 100%;
@@ -77,4 +81,23 @@ animation-fill-mode: backwards;
     to{
         transform: scale(1);
     }
+}
+#cover-text{
+    font-size: 130%;
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+   
+    width: 300px;
+    height: 200px;
+
+    padding-top: 40px;
+    padding-left: 10px;
+
+    background-color: rgba(245, 202, 9, 0.862);
+
+    bottom: 30px;
+    right: 150px;
+
+    position: absolute;
 }

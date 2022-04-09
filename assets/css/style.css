@@ -143,6 +143,9 @@
     }
     .clearfix{
     min-height: 175px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
     }
     .clearfix::after {
     content: none;
@@ -298,7 +301,6 @@
     }
     #reasons{
         width: 90%;
-        height: 1200px;
         margin: 0 auto;
     }
     h2{
@@ -312,6 +314,10 @@
     p{
         text-align: center;
         padding: 0 20px;
+    }
+    .clearfix{
+        flex-direction: column;
+        width: 100%;
     }
     }
     #photos{

@@ -79,14 +79,16 @@ animation-duration: 5s;
 animation-fill-mode: backwards;
 }
  /*courses content*/
+ #courses{
+     text-align: center;
+     margin: 20px 0;
+        font-size: 280%;
+ }
  #high-school-students {   
     height: 600px;
     width: 100%;
     overflow: hidden; 
     position: relative;   
-}
-#cover-text, #cover-text h2{
-    color: #383838;
 }
  #high-school-students {
     height: 400px;
@@ -293,5 +295,6 @@ animation-fill-mode: backwards;
 }
 
 
-   
+    
+    
     

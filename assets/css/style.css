@@ -196,7 +196,57 @@ animation-fill-mode: backwards;
         transform: scale(1.5);
         color: #e0768f;
     }
+    /* Form */
+
+.form-section {
+    clear: left;
+    background: url("../images/library-full\ -with-atudens.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+}
+.signup-form {
+    margin: 150px 10% 0 0;
+    color: #fff;
+    background-color: rgba(60, 60, 60, 0.6);
+    max-width: 450px;
+    position: absolute;
+    left: 10%;
+    padding: 30px;
     
+}
+.signup-form > h2{
+    color: #fafafa;
+    margin-bottom: 20px;
+}
+.text-input{
+    background: transparent;
+    color: #fafafa;
+    width: 100%;
+    height: 25px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+}
+.text-input:hover{
+    border-color: #383838;
+}
+.join-button {
+    margin-top:20px;
+    border-radius: 2px;
+    padding: 15px 32px 15px 32px;
+    text-align: center;
+    font-size:100%;
+    background-color: #e29b20;
+    color: #383838;
+    display: block;
+}
+
+.join-button:hover{
+    background-color: #fafafa;
+    color: #505050;   
+}
+
 
    
     

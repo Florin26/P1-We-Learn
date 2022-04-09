@@ -165,7 +165,7 @@ animation-fill-mode: backwards;
         flex-direction: row;
         margin: 0 30px;
     }
-    /* mouse over link */
+    /* mouse over media icons */
     .social-networks.text {
         flex-direction: column;
         text-align: left;

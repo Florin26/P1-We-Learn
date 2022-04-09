@@ -1,258 +1,234 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Roboto+Condensed&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Roboto+Condensed&display=swap');
 
-*{
+    *{
     margin: 0;
     padding: 0;
     border: none;
-}
-body {
+    } 
+    body {
     font-family: Roboto Condensed, sans-serif;
     font-weight: 400;
     color: #383838;
     background: #EBEBEB;
-}
-/*heading and logo*/
+    }
+    /*heading and logo*/
 
-h1, h2{
+    h1, h2{
     font-family: Noto serif, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
     color: #242424;
-}
-
-#logo{
+    }
+    #logo{
     float: left;
     font-size: 280%;
     margin-left: 30px;
-}
-
-header {
+    }
+    header {
     min-height: 100px;
-
-}
-/*navigation links*/
-
-#menu {
+    }
+    /*navigation links*/ 
+    #menu {
     font-size: 100%;
     letter-spacing: 5px;
-}
-#menu, #logo {
-line-height: 75px;
-}
-#menu li {
+    }
+    #menu, #logo {
+    line-height: 75px;
+    }
+    #menu li {
     float: right;
     list-style-type: none;
     margin-right: 25px;
-}
-
-#menu a {
-text-decoration: none;
-color: inherit;
-}
-
-#menu a:hover {
+    }
+    #menu a {
+    text-decoration: none;
+    color: inherit;
+    }
+    #menu a:hover {
     border-bottom: 1px solid #242424;
-}
-.active {
+    }
+    .active {
     border-bottom: 1px solid #242424;
-}
-/*hero-image and cover text*/
-
-#hero-outer {   
+    }
+    /*hero-image and cover text*/
+    #hero-outer {   
     height: 600px;
     width: 100%;
     overflow: hidden; 
     position: relative;   
-}
-#cover-text, #cover-text h2{
+    }
+    #cover-text, #cover-text h2{
     color: #383838;
-}
-#hero-image {
+    }
+    #hero-image {
     height: 600px;
     width: 100%;
     background: url("../images/hero-image.jpg") no-repeat center center;
     background-size: 100%;
 
-/*animates zoom effect on loading page*/
-animation-name: hero-zoom;
-animation-duration: 5s;
-animation-fill-mode: backwards;
-}
- /*courses content*/
- #courses{
-     text-align: center;
-     margin: 20px 0;
-        font-size: 280%;
- }
- #high-school-students {   
+    /*animates zoom effect on loading page*/
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: backwards;
+    }
+    /*courses content*/
+    #courses{
+    text-align: center;
+    margin: 15px 0;
+    font-size: 250%;
+    }
+    #high-school-students {   
     height: 600px;
     width: 100%;
     overflow: hidden; 
     position: relative;   
-}
- #high-school-students {
-    height: 400px;
+    }
+    #high-school-students {
+    height: 500px;
     width: 100%;
     background: url("../images/high-school-students.jpg") no-repeat center center;
     background-size: 100%;
-  }
+    }
 
-  #college-students {
-    height: 400px;
+    #college-students {
+    height: 500px;
     width: 100%;
     background: url("../images/college-students.jpg") no-repeat center center;
     background-size: 100%;
-  }
-
-  #univercity-graduates {
-    height: 400px;
+    }
+    #univercity-graduates {
+    height: 500px;
     width: 100%;
     background: url("../images/university-graduates.jpg") no-repeat center center;
     background-size: 100%;
-  }
-/*creats the level of zoom for hero image*/
-@keyframes hero-zoom {
+    }
+    /*creats the level of zoom for hero image*/
+    @keyframes hero-zoom {
     from{
-        transform: scale(1.1);
+    transform: scale(1.1);
     }
     to{
-        transform: scale(1);
+    transform: scale(1);
     }
-}
-#cover-text{
+    }
+    #cover-text{
     font-size: 130%;
     font-family: Roboto, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
-   
     width: 300px;
     height: 200px;
-
     padding-top: 40px;
     padding-left: 10px;
-
     background-color: rgba(245, 202, 9, 0.862);
-
     bottom: 30px;
     right: 150px;
-
     position: absolute;
-}
- 
-/*reasons content*/  
-.reasons, *{
-        box-sizing: border-box;
-      }
+    } 
+    /*reasons content*/  
+    .reasons, *{
+    box-sizing: border-box;
+    }
       
-      .box {
-        float: left;
-        width: 33.33%;
-        padding: 50px;
-      }
-
-      hr {
-        border-top: none;
-        margin: 5px 0;
-    
-      }
-      .clearfix{
-          min-height: 175px;
-      }
-      .clearfix::after {
-        content: none;
-        clear: both;
-        display: table;
-        
-      }
-
-      #welcome {
-        text-align: center;
-        margin: 20px 0;
-        font-size: 280%;
+    .box {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
     }
-  
+
+    hr {
+    border-top: none;
+     margin: 5px 0;
+    
+    }
+    .clearfix{
+    min-height: 175px;
+    }
+    .clearfix::after {
+    content: none;
+     clear: both;
+    display: table;   
+    }
+    #welcome {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 280%;
+    }
     /* schedule */
-
     #schedule{
-        background-image: url("../images/empty-auditorium.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-        overflow: hidden;
+    background-image: url("../images/empty-auditorium.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    overflow: hidden;
     }
-       #calendar{
-        text-align: center;
-        margin: 20px 0;
-        font-size: 280%;
-       }
-
-    
+    #calendar{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 280%;
+    }
     #schedule div{
-        color: #fafafa;
-        background-color: rgba(0, 0, 0, .6);
-        width: 20%;
-        height: 300px;
-        float: left;
-        padding: 30px 0 0 10px;
-        text-align: center;
-        border: 2px solid white;
-        box-sizing: border-box;
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .6);
+    width: 20%;
+    height: 300px;
+    float: left;
+    padding: 30px 0 0 10px;
+    text-align: center;
+    border: 2px solid white;
+    box-sizing: border-box;
        
     }
     #schedule h2{
-        color: #fafafa;
+    color: #fafafa;
     }
     /*footer*/
-
     footer {
-        height: 100px;
-        align-items: center;
-        display: flex;
-        flex-direction: row;
-        margin: 0 30px;
+    height: 100px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin: 0 30px;
     }
     /* mouse over media icons */
     .social-networks.text {
-        flex-direction: column;
-        text-align: left;
-        line-height: 24px;
+    flex-direction: column;
+    text-align: left;
+    line-height: 24px;
     }
     
     .social-networks {
-        text-align: center;
-        display: flex;
-        width: 100%;
-        justify-content: space-around;
-        top: 2px;
-        position: relative;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    top: 2px;
+    position: relative;
     }
-    
     .social-networks li {
-        display: inline;
+    display: inline;
     }
     
     .social-networks i {
-        font-size: 250%;
-        margin: 1%;
-        padding: 50%;
-        color: #383838;
+    font-size: 250%;
+    margin: 1%;
+    padding: 50%;
+    color: #383838;
     }
-    
     .social-networks a:hover i {
-        transform: scale(1.5);
-        color: #e29b20;
+    transform: scale(1.5);
+    color: #e29b20;
     }
-    /* Form */
-
-.form-section {
+    /* Form */   
+    .form-section {
     clear: left;
     background: url("../images/library-full\ -with-atudens.jpg");
     background-size: cover;
     background-position: center;
     height: 1000px;
-}
-.signup-form {
+    }
+    .signup-form {
     margin: 150px 10% 0 0;
     color: #fff;
     background-color: rgba(60, 60, 60, 0.6);
@@ -260,13 +236,12 @@ animation-fill-mode: backwards;
     position: absolute;
     left: 10%;
     padding: 30px;
-    
-}
-.signup-form > h2{
+    }
+    .signup-form > h2{
     color: #fafafa;
     margin-bottom: 20px;
-}
-.text-input{
+    }
+    .text-input{
     background: transparent;
     color: #fafafa;
     width: 100%;
@@ -274,11 +249,11 @@ animation-fill-mode: backwards;
     margin: 5px 0 20px 0;
     border: 1px solid #fafafa;
     border-radius: 2px;
-}
-.text-input:hover{
+    }
+    .text-input:hover{
     border-color: #383838;
-}
-.join-button {
+    }
+    .join-button {
     margin-top:20px;
     border-radius: 2px;
     padding: 15px 32px 15px 32px;
@@ -287,14 +262,78 @@ animation-fill-mode: backwards;
     background-color: #e29b20;
     color: #383838;
     display: block;
-}
-
-.join-button:hover{
+    }
+    .join-button:hover{
     background-color: #fafafa;
     color: #505050;   
-}
+    }
+     /* Media queries */
+    /* For larger to medium screen sizes from 1200px wide and down */
+     @media screen and (max-width: 1200px) {
+     #welcome {
+        padding: 30px 0;
+        margin: 0;
+    }
+    }
+    #schedule > div {
+    width: 100%;
+    clear: both;
+    height: 150px;
+    padding: 0;
+    }
+    hr {
+    display: none;
+    }
+    /* For medium screen sizes from 950px wide and down */
+    @media screen and (max-width: 950px) {
+    #menu {
+        clear: left;
+        float: left;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        line-height: 25px;
+    }
+    #cover-text{
+        left: 0%;
+    }
+    #reasons{
+        width: 90%;
+        height: 1200px;
+        margin: 0 auto;
+    }
+    h2{
+        width:inherit;
+    }
+
+    h2{
+        width: 100%;
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        padding: 0 20px;
+    }
+    }
+    #photos{
+    column-count: 3;
+    }
+    /* For small screen sizes from 800px wide and down */
+    @media screen and (max-width: 800px) {
+    #photos{
+    column-count: 2;
+    }
+    }
+    #reasons{
+    width: 90%;
+    height: 800px;
+    margin: 0 auto;
+    }
+    #cover-text{
+    left: 0%;
+    }
+  
 
 
-    
-    
+
+
     

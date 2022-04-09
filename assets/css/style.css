@@ -156,5 +156,47 @@ animation-fill-mode: backwards;
     #schedule h2{
         color: #fafafa;
     }
+    /*footer*/
+
+    footer {
+        height: 100px;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        margin: 0 30px;
+    }
+    /* mouse over link */
+    .social-networks.text {
+        flex-direction: column;
+        text-align: left;
+        line-height: 24px;
+    }
+    
+    .social-networks {
+        text-align: center;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        top: 2px;
+        position: relative;
+    }
+    
+    .social-networks li {
+        display: inline;
+    }
+    
+    .social-networks i {
+        font-size: 250%;
+        margin: 1%;
+        padding: 50%;
+        color: #383838;
+    }
+    
+    .social-networks a:hover i {
+        transform: scale(1.5);
+        color: #e0768f;
+    }
     
 
+   
+    

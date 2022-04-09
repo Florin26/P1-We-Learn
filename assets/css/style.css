@@ -102,16 +102,17 @@ animation-fill-mode: backwards;
     position: absolute;
 }
 
-    
- *{
+  
+.reasons, *{
         box-sizing: border-box;
       }
       
       .box {
         float: left;
-        width: 33%;
+        width: 33.33%;
         padding: 50px;
       }
+
       hr {
         border-top: none;
         margin: 5px 0;
@@ -119,9 +120,16 @@ animation-fill-mode: backwards;
       }
       
       .clearfix::after {
-        content: "";
+        content: none;
         clear: both;
         display: table;
       }
+
+      #welcome {
+        text-align: center;
+        margin: 20px 0;
+        font-size: 280%;
+    }
+  
     
 

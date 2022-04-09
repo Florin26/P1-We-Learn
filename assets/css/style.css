@@ -25,6 +25,11 @@ h1, h2{
     font-size: 280%;
     margin-left: 30px;
 }
+
+header {
+    min-height: 100px;
+
+}
 /*navigation links*/
 
 #menu {
@@ -73,6 +78,36 @@ animation-name: hero-zoom;
 animation-duration: 5s;
 animation-fill-mode: backwards;
 }
+ /*courses content*/
+ #high-school-students {   
+    height: 600px;
+    width: 100%;
+    overflow: hidden; 
+    position: relative;   
+}
+#cover-text, #cover-text h2{
+    color: #383838;
+}
+ #high-school-students {
+    height: 400px;
+    width: 100%;
+    background: url("../images/high-school-students.jpg") no-repeat center center;
+    background-size: 100%;
+  }
+
+  #college-students {
+    height: 400px;
+    width: 100%;
+    background: url("../images/college-students.jpg") no-repeat center center;
+    background-size: 100%;
+  }
+
+  #univercity-graduates {
+    height: 400px;
+    width: 100%;
+    background: url("../images/university-graduates.jpg") no-repeat center center;
+    background-size: 100%;
+  }
 /*creats the level of zoom for hero image*/
 @keyframes hero-zoom {
     from{
@@ -101,7 +136,7 @@ animation-fill-mode: backwards;
 
     position: absolute;
 }
-
+ 
 /*reasons content*/  
 .reasons, *{
         box-sizing: border-box;
@@ -118,11 +153,14 @@ animation-fill-mode: backwards;
         margin: 5px 0;
     
       }
-      
+      .clearfix{
+          min-height: 175px;
+      }
       .clearfix::after {
         content: none;
         clear: both;
         display: table;
+        
       }
 
       #welcome {
@@ -141,7 +179,13 @@ animation-fill-mode: backwards;
         width: 100%;
         overflow: hidden;
     }
+       #calendar{
+        text-align: center;
+        margin: 20px 0;
+        font-size: 280%;
+       }
 
+    
     #schedule div{
         color: #fafafa;
         background-color: rgba(0, 0, 0, .6);
@@ -152,6 +196,7 @@ animation-fill-mode: backwards;
         text-align: center;
         border: 2px solid white;
         box-sizing: border-box;
+       
     }
     #schedule h2{
         color: #fafafa;
@@ -194,7 +239,7 @@ animation-fill-mode: backwards;
     
     .social-networks a:hover i {
         transform: scale(1.5);
-        color: #e0768f;
+        color: #e29b20;
     }
     /* Form */
 
